@@ -1,0 +1,459 @@
+ html { 
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    'check animation design'
+    'photography crypto business';
+    text-align: center;
+    gap: 2vw;
+    row-gap: 3vw;
+    margin-top: 10vh;
+    min-height: 60vh;
+    
+
+}
+.grid-container > div{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 15px;
+    align-items: start;
+    flex-direction: column;
+    height: 22vw;
+    width: 22vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    font-size: 2.3vw;
+}
+.checkout{
+    grid-area: check;
+    background-image:linear-gradient(rgb(255, 87, 26),rgb(255, 0, 140));
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: left;
+    animation: spin 3s  1s 1 normal;
+}
+.animation{
+    grid-area: animation;
+    font-weight: lighter;
+    animation: spin 3s  1.5s 1 normal;
+}
+.design{
+    grid-area: design;
+    animation: spin 3s  2s 1 normal;
+}
+.photography{
+    grid-area: photography;
+    animation: spin 3s  2.5s 1 normal;
+}
+.crypto{
+    grid-area: crypto;
+    animation: spin 3s  3s 1 normal;
+}
+.business{
+    grid-area: business;
+    animation: spin 3s  3.5s 1 normal;
+}
+.top-top{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.top-top > div{
+    height: auto;
+    width: 6vw;
+    margin-right: 6vw;
+    color: white;
+    padding: 1vw;
+    border-radius: 30px;
+    background-color: rgb(81, 72, 72);
+    font-size: 1.1vw;
+}
+.top-top > h1{
+    margin-left: 5vw;
+    font-size: 2.3vw;
+}
+.top-top >div:hover{
+    color: black;
+    background-color: aliceblue;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top-right{
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;
+    height: auto;
+    width: 50%;
+    margin-left: 3vw;
+}
+#first-text{
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1.5vw;
+}
+#second-text{
+    font-size: 1.2vw;
+    padding: 1.5vw;
+}
+#third-text{
+    width: 7vw;
+    color: white;
+    font-size: 1.2vw;
+    background-image:linear-gradient(rgb(255, 87, 26),rgb(255, 0, 140));
+    border-radius: 30px;
+    padding: 0.9vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1vw ;
+}
+#third-text:hover{
+    background-image:linear-gradient(rgb(180, 15, 225),rgb(219, 22, 189));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#top-left{
+    margin-left: 18vw;
+    display: flex;
+    height: auto;
+    width: 50%;
+}
+#parallelogram {
+    margin-left: 20vw;
+    position: absolute;
+	width: 25vw;
+	height: 16vw;
+	transform: skew(-30deg);
+    rotate: -40deg;
+    z-index: -100;
+    background-image:linear-gradient(rgb(180, 15, 225),rgb(219, 22, 189));
+}
+.box{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 6vw;
+    width: 9vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 15px;
+}
+#image{
+    height: 28vw;
+    width: 18vw;
+    border-radius: 150px;
+    margin-left: 10vw;
+    animation: open 3s 4s normal;
+}
+#course-hours{
+    margin-left: 4vw;
+    margin-top: 16vw;
+    position: absolute;
+    background-color: white;
+    font-size: 1vw;
+    
+}
+#members{
+    background-color: white;
+    margin-left: 26vw;
+    position: absolute;
+    z-index: 2;
+    margin-top: 3vw;
+    font-size: 1vw;
+}
+.bottom{
+    margin-top: 4vw;
+    min-height: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(21, 21, 54);
+}
+#skilled-bottom{
+    font-weight: bold;
+    font-size: 2vw;
+    margin-left: 10vw;
+}
+#get-started{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 2vw;
+    padding: 0.4vw;
+    width: 8vw;
+    background-image:linear-gradient(rgb(219, 22, 189),rgb(180, 15, 225));
+    border-radius:30px ;
+    text-align: center;
+    margin-right: 8vw;
+    font-size: 1.2vw;
+}
+#get-started:hover{
+    background-image:linear-gradient(rgb(255, 87, 26),rgb(255, 0, 140));
+}
+#course-num{
+    font-size: 2vw;
+    font-weight: bold;
+}
+#member-num{
+    font-size: 2vw;
+    font-weight: bold;
+}
+i{
+    position:absolute;
+    z-index: 1;
+    margin-bottom: 22vw;
+    color: white;
+    font-size: 1.5vw;
+    padding: 1vw;
+    border-radius: 50%;
+    background-image:linear-gradient(rgb(255, 87, 26),rgb(255, 0, 140));
+    margin-right: 150px;
+}
+p{
+    font-size: 1.3vw;
+    text-align: left;
+    color: gray;
+    font-weight: 500;
+}
+span{
+    font-weight: bold;
+}
+.get-started1{
+    color: rgb(249, 95, 71);
+    font-weight: bold;
+    font-size: 2vw;
+}
+a:link{
+    color: rgb(249, 95, 71);
+}
+a:visited{
+    color: rgb(249, 95, 71);
+}
+@keyframes spin{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes open{
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+@media only screen and (max-width: 680px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container{
+        display: grid;
+    justify-content: center;
+    grid-template-areas: 
+        'check'
+        'animation'
+        'design'
+        'photography'
+        'crypto' 
+        'business';
+    text-align: center;
+    gap: 5vw;
+    row-gap: 5vw;
+    }
+    .grid-container > div{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 15px;
+        align-items: start;
+        flex-direction: column;
+        height: 60vw;
+        width: 80vw;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 15px;
+        font-size: 7vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    .get-started1{
+        font-size: 4vw;
+    }
+    i{
+        position:absolute;
+        z-index: 1;
+        margin-bottom: 60vw;
+        color: white;
+        font-size: 3.5vw;
+        padding: 2vw;
+        border-radius: 50%;
+        background-image:linear-gradient(rgb(255, 87, 26),rgb(255, 0, 140));
+        margin-right: 150px;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 90vw;
+    }
+    #parallelogram{
+        display: none;
+    }
+    .top-top > div{
+        height: auto;
+        width: 12vw;
+        margin-right: 10vw;
+        color: white;
+        padding: 2vw;
+        border-radius: 30px;
+        background-color: rgb(81, 72, 72);
+        font-size: 2.3vw;
+    }
+    .top-top > h1{
+        margin-left: 10vw;
+        font-size: 4vw;
+    }
+    #top-right{
+        display: flex;
+        flex-direction: column;
+        justify-content:  start;
+        height: auto;
+        width: 90vw;
+        margin-left: 20vw;
+
+    }
+    #first-text{
+        font-size: 7vw;
+        font-weight: bold;
+        padding: 1.5vw;
+    }
+    #second-text{
+        font-size:2.2vw;
+        padding: 1.5vw;
+    }
+    #third-text{
+        width: 15vw;
+        color: white;
+        font-size: 3vw;
+        background-image:linear-gradient(rgb(255, 87, 26),rgb(255, 0, 140));
+        border-radius: 30px;
+        padding: 1.5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 1vw ;
+    }
+    #top-left{
+        display: flex;
+        height: auto;
+        margin-right: 30vw;
+        margin-top: 5vw;
+    }
+    .box{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 15vw;
+        width: 16vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        border-radius: 15px;
+    }
+    #image{
+        height: 50vw;
+        width: 50vw;
+        border-radius: 100%;
+    }
+    #course-hours{
+        margin-left: 4vw;
+        margin-top: 30vw;
+        position: absolute;
+        background-color: white;
+        font-size: 2vw;
+    }
+    #members{
+        background-color: white;
+        margin-left: 50vw;
+        position: absolute;
+        z-index: 2;
+        margin-top: 1vw;
+        font-size: 2vw;
+    }
+    #course-num{
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    #member-num{
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    .bottom{
+        margin-top: 5vw;
+        min-height: 10vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background-color: rgb(21, 21, 54);
+    }
+    #skilled-bottom{
+        font-weight: bold;
+        font-size: 4vw;
+        margin-left: 10vw;
+    }
+    #get-started{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        height: 2vw;
+        padding: 1.5vw;
+        width: 12vw;
+        background-image:linear-gradient(rgb(219, 22, 189),rgb(180, 15, 225));
+        border-radius:30px ;
+        text-align: center;
+        margin-right: 8vw;
+        font-size: 2vw;
+    }
+}

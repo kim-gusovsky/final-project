@@ -1,0 +1,71 @@
+body{
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 30vw;
+    height: 30vw;
+    perspective: 1000px;
+    margin-top: 12%;
+    margin-left: 40%;
+}
+.cube{
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: spin 6s infinite linear;
+}
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 118, 118, 0.756);
+    border-color: black;
+    border: 10pxx;
+}
+.top{
+   transform: rotateX(90deg) translateZ(15vw);
+}
+.bottom{
+   transform: rotateX(-90deg) translateZ(15vw);
+   background-color: rgb(142, 235, 235, 0.756);
+}
+.left{
+   transform: rotateY(-90deg) translateZ(15vw);
+   background-color: rgb(150, 235, 142, 0.756);
+}
+.right{
+   transform: rotateY(90deg) translateZ(15vw);
+   background-color: rgba(142, 148, 235, 0.756);
+}
+.back{
+   transform: rotateX(-180deg) translateZ(15vw);
+   background-color: rgba(229, 83, 240, 0.756);
+}
+.front{
+   transform: rotateX(0deg) translateZ(15vw);
+   background-color: rgb(235, 189, 142, 0.756);
+}
+@keyframes spin{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+.link1{
+    position:relative;
+    color: white;
+    background-color: blueviolet;
+    padding: 1vw;
+    border-radius: 20px;
+    margin-top: 2vw;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+
+}
