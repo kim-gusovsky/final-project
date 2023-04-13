@@ -173,7 +173,6 @@
     width: 18vw;
     border-radius: 150px;
     margin-left: 10vw;
-    animation: open 3s 4s normal;
 }
 #course-hours{
     margin-left: 4vw;
@@ -267,14 +266,6 @@ a:visited{
     }
     to{
         transform: rotateZ(360deg);
-    }
-}
-@keyframes open{
-    from{
-        transform: rotateX(90deg);
-    }
-    to{
-        transform: rotateX(0deg);
     }
 }
 @media only screen and (max-width: 680px) {
