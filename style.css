@@ -41,7 +41,7 @@
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     font-size: 2.3vw;
-    transition: 0.8s;
+    transition: 0.7s;
 }
 .checkout{
     grid-area: check;
