@@ -1,3 +1,4 @@
+
  html { 
     margin: 0px;
     height: 100%;
@@ -91,13 +92,13 @@
     z-index: 3;
 }
 video{
-    width: -webkit-fill-available;
+    width: 100vw;
+    height: auto;
     object-fit: contain;
     overflow-clip-margin: content-box;
      margin: 0;
     z-index: -1;
     position: absolute;
-    transform: scale(5,0.3) ; 
 }
 .top-top > h1{
     margin-left: 5vw;
@@ -126,11 +127,13 @@ video{
     font-size: 3vw;
     font-weight: bold;
     padding: 1.5vw;
+    color: white;
 }
 #second-text{
     font-size: 1.2vw;
     padding: 1.5vw;
     transition: 1s;
+    color: white;
 }
 #second-text:hover{
     z-index: 5;
@@ -299,6 +302,7 @@ a:visited{
     margin: 0;
     text-align: center;
     position: inherit;
+    z-index: 0;
 }
 #icons-bottom>i:hover{
     background-image:linear-gradient(rgb(219, 22, 189),rgb(180, 15, 225));
@@ -329,6 +333,7 @@ a:visited{
     text-align: center;
     gap: 5vw;
     row-gap: 5vw;
+    z-index: 1;
     }
     .grid-container > div{
         display: flex;
@@ -366,6 +371,7 @@ a:visited{
         align-items: center;
         justify-content: space-around;
         width: 90vw;
+        margin-top: 23vw;
     }
     #parallelogram{
         display: none;
@@ -397,10 +403,12 @@ a:visited{
         font-size: 7vw;
         font-weight: bold;
         padding: 1.5vw;
+        color: black;
     }
     #second-text{
         font-size:2.2vw;
         padding: 1.5vw;
+        color: black;
     }
     #second-text:hover{
         z-index: 5;
